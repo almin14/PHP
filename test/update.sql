@@ -1,0 +1,2 @@
+ALTER TABLE `StudentPayment` ADD `documentNumber` INT(11) NOT NULL AFTER `cashSeries`, ADD `documentSeries` TEXT NOT NULL AFTER `documentNumber`, ADD `documentType` INT(3) NOT NULL AFTER `documentSeries`;
+ALTER TABLE `client` ADD `clientLastCreditReceiptNumber` INT NOT NULL AFTER `clientLastInvoiceNumber`, ADD `clientLastCreditInvoiceNumber` INT NOT NULL AFTER `clientLastCreditReceiptNumber`, ADD `creditReceiptSeries` TEXT NOT NULL AFTER `clientLastCreditInvoiceNumber`, ADD `creditInvoiceSeries` TEXT NOT NULL AFTER `creditReceiptSeries`;
